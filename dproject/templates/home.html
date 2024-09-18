@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second html page</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        #h1{
+            background-color: cadetblue;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="h1"style=" color:red"><center>Student Record</center></h1>
+    <form action="Savedata" >
+        <table align="center" border="2">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name">
+                </td>
+ 
+            </tr>
+            <tr>
+                <td> Age:</td>
+                <td>   <input type="text" name="age">
+                </td>
+ 
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                    <td><input type="text" name="mobile">
+                </td>
+ 
+            </tr>
+            <tr>
+                <td>Address:</td>
+                    <td><textarea name="address"></textarea>
+                </td>
+ 
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btn" value="save">
+                    <button><a href="Viewallrecord" style="color:blue">Viewallrecords</a></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

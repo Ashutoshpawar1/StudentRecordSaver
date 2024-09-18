@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit page</title>
+</head>
+<body>
+    <form action="updatedata">
+    <table align="center" border="1">
+        <tr><th>Edit Record</th></tr>
+        <tr>
+            <td>sid</td>
+            <td>
+                <input type="text" name="sid" value="{{data.0}}">
+            </td>
+        </tr>
+        <tr>
+            <td>sname</td>
+
+            <td>
+                <input type="text" name="sname" value="{{data.1}}"> 
+            </td>
+        </tr>
+        <tr>
+            <td>sage</td>
+
+            <td>
+                <input type="text" name="sage" value="{{data.2}}"> 
+            </td>
+        </tr>
+        <tr>
+            <td>smobile</td>
+
+            <td>
+                <input type="text" name="smobile" value="{{data.3}}"> 
+            </td>
+        </tr>
+        <tr>
+            <td>saddress</td>
+            <textarea type="text" name="stextarea" value="{{data.4}}"></textarea>
+        </tr>
+    </table>
+</form>
+    
+</body>
+</html>

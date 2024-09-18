@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewallrecord</title>
+</head>
+<body>
+    <table align="center" border="=1">
+        <tr>
+            <th>sid</th>
+            <th>sname</th>
+            <th>sage</th>
+            <th>smobile</th>
+            <th>saddress</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{x.0}}</td>
+            <td>{{x.1}}</td>
+            <td>{{x.2}}</td>
+            <td>{{x.3}}</td>
+            <td>{{x.4}}</td>
+        </tr>
+        {% endfor %}
+        <td>
+            <a href="search data?id={{x.0}}" style="color:blue;">Edit</a>
+        </td>   
+        <td>
+            <a href="deletedata?id={{x.0}}" style="color:blue;">delete</a>
+        </td>
+       
+    </table>
+
+</body>
+</html>

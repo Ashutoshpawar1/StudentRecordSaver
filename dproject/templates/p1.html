@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{dict}}</title>
+</head>
+<body>
+    <h1 style="background-color:red; "><center>Normal Access</center></h1>
+    <h2><center>Ans.of d1 is = {{dict}}</center></h2>
+    <h2><center>Ans.of d1 is = {{dict.id}}</center></h2>
+    <h2><center>Ans.of d1 is = {{dict.name}}</center></h2>
+    <h2><center>Ans.of d1 is = {{dict.age}}</center></h2>
+    <!-- <h2><center>Ans. of l2 is = {{list2}}</center></h2> -->
+    <h1 style="background-color:red; "><center>By using loop</center></h1>
+    <div class="1container">
+        {% for x in dicts %}
+        <h3>{{x}}</h3>
+        {% endfor %}
+        
+</body>
+</html>
